@@ -167,7 +167,7 @@ const Component = ({ location, pageContext }) => {
                       <input
                         type="email"
                         size="40"
-                        placeholder="例 ) info@example.jp"
+                        placeholder="例 ) info@example.com"
                         {...register("email", {
                           required: true,
                           pattern: {

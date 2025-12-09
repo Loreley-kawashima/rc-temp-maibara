@@ -17,7 +17,7 @@ const Component = () => {
           <StaticImage
             src="../../images/icon/page_top.png"
             alt="トップに戻る"
-            width={95}
+            width={70}
           />
         </Link>
       </div>

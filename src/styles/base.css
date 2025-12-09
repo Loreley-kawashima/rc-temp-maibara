@@ -676,14 +676,14 @@ a[href^="tel:"] {
 
 .pageTop {
   position: fixed;
-  right: 0;
-  bottom: 0;
+  right: 10px;
+  bottom: 10px;
   z-index: 600;
 }
 
 .pageTop a {
   display: inline-block;
-  background: var(--color-main);
+  /*background: var(--color-main)*/;
 }
 
 .pageTop a:hover {

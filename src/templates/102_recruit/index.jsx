@@ -128,23 +128,13 @@ const Page = ({ location, pageContext }) => {
         {/* インタビュー */}
         <section id="a02" className="interviewSec">
           <div className="content">
-            <h3 className="headLine02 fadeInUp">インタビュー</h3>
+            <h3 className="headLine02 fadeInUp">従業員のインタビュー</h3>
             <p className="topTxt fadeInUp">
               {pageContext.interview.headers.text}
             </p>
 
             {/* 代表者インタビュー */}
             <div className="video fadeInUp">
-              <div className="infoVideo">
-
-                {/* 画像の場合はこちらのコードを使用 */}
-                <img src={interviewPhoto} alt="代表インタビュー" />
-
-                {/* 動画の場合はこちらのコードを使用 */}
-                {/* <video src={interviewMovie} controls></video> */}
-
-              </div>
-              <p className="name"><span className="small">代表取締役</span>名字 名前</p>
             </div>
 
             {/* 従業員インタビュー */}
@@ -216,8 +206,8 @@ const Page = ({ location, pageContext }) => {
                   <figure>
                     <img src={welfare.iconMedia.url} alt="福利厚生" />
                     <figcaption>{welfare.title}</figcaption>
+                     {welfare.content && <p dangerouslySetInnerHTML={{ __html: welfare.content }} />}
                   </figure>
-                  {welfare.content && <p dangerouslySetInnerHTML={{ __html: welfare.content }} />}
                 </li>
               ))}
             </ul>

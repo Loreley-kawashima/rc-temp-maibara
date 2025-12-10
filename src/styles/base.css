@@ -15,10 +15,9 @@ Version: 1.0
 :root {
   --color-dark: #212836;
   --color-main: #1961a0;
-  --color-sub: #466F89;
-  --color-footer:#e7f4f9;
-  
-
+  --color-sub: #E6F0F3;
+  --color-sub01: #184c6c;
+  --color-sub02: #3A6F8A;
   --color-small: #dd2200;
 }
 
@@ -194,7 +193,7 @@ a:link {
 }
 
 a:visited {
-  color: var(--color-dark);
+  color: var(--color-main);
 }
 
 a:hover {
@@ -246,7 +245,7 @@ body {
   line-height: 1.5;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
-  background-color: #FFF;
+  background-color: #f7ffff;
 }
 
 body.fixed {
@@ -353,7 +352,7 @@ a[href^="tel:"] {
   font-weight: 500;
   width: 194px;
   text-align: center;
-  background: var(--color-dark);
+  background: var(--color-sub01);
   letter-spacing: 0.06em;
   cursor: pointer;
 }
@@ -442,7 +441,7 @@ a[href^="tel:"] {
   right: 0;
   top: 83px;
   width: 550px;
-  background: #4C515C;
+  background: var(--color-sub01);
   z-index: 1000;
   height: calc(100% - 83px);
   overflow-y: auto;
@@ -500,7 +499,8 @@ a[href^="tel:"] {
 
 @media all and (min-width: 897px) {
   #gHeader .menu:hover {
-    background: #4C515C;
+    background: var(--color-sub01);
+    opacity: 0.7;
   }
 
   #gHeader .menu:hover:before {
@@ -645,7 +645,7 @@ a[href^="tel:"] {
 ------------------------------------------------------------*/
 #gFooter {
   padding: 28px 0;
-  background-color: var(--color-footer);
+  background-color: var(--color-sub01);
 }
 
 #gFooter .footerBar {
@@ -675,6 +675,7 @@ a[href^="tel:"] {
   font-size: 1.4rem;
   letter-spacing: 0.06em;
   font-style: normal;
+  color: #fff;
 }
 
 .pageTop {
@@ -921,7 +922,7 @@ a[href^="tel:"] {
   font-size: 2.4rem;
   font-weight: 700;
   letter-spacing: 0.06em;
-  border-bottom: 1px solid #D1CFCF;
+  border-bottom: 1px solid #3A6F8A;
 }
 
 @media all and (max-width: 896px) {
@@ -948,7 +949,7 @@ a[href^="tel:"] {
 
 .headLine04 .en {
   margin-bottom: 10px;
-  color: #F2F3F2;
+  color: var(--color-sub);
   display: block;
   font-family: 'Roboto', sans-serif;
   font-size: 3.6rem;
@@ -1020,7 +1021,7 @@ a[href^="tel:"] {
 ------------------------------------------------------------*/
 .comCompany {
   padding: 136px 0 140px;
-  background: var(--color-dark);
+  background: var(--color-sub02);
 }
 
 .comCompany .headLine04 {
@@ -1030,8 +1031,8 @@ a[href^="tel:"] {
 }
 
 .comCompany .headLine04 .en {
-  color: #fff;
-  opacity: 0.2;
+  color: var(--color-sub);
+  opacity: 0.5;
 }
 
 .comCompany .headLine04 .jp {
@@ -1458,7 +1459,7 @@ a[href^="tel:"] {
   height: 100%;
   font-size: 1.8rem;
   color: #fff;
-  background: rgba(33, 40, 54, 0.77);
+  background: #184C6C99;
   line-height: 2;
   box-sizing: border-box;
   letter-spacing: 0.06em;
@@ -1480,7 +1481,7 @@ a[href^="tel:"] {
   letter-spacing: 0.06em;
   z-index: 10;
   width: 522px;
-  background: var(--color-dark);
+  background: var(--color-sub01);
   box-sizing: border-box;
 }
 
@@ -1601,7 +1602,7 @@ a[href^="tel:"] {
 .indexPage .aboutSec {
   margin-bottom: 250px;
   padding: 200px 0;
-  background: #F2F3F2;
+  background: var(--color-sub);
 }
 
 .indexPage .aboutSec .inner {
@@ -1710,7 +1711,7 @@ a[href^="tel:"] {
   margin-bottom: 95px;
   display: flex;
   justify-content: space-between;
-  background: #F2F3F2;
+  background: var(--color-sub);
 }
 
 .indexPage .jobSec .innerBox .photoBox {
@@ -1735,7 +1736,7 @@ a[href^="tel:"] {
 }
 
 .indexPage .jobSec .innerBox .textBox .jobTagBox span {
-  background: #777777;
+  background: var(--color-sub02);
   color: #FFFFFF;
   margin-right: 5px;
   padding: 3px 20px;
@@ -2111,6 +2112,7 @@ a[href^="tel:"] {
   line-height: 2.5;
   letter-spacing: 0.06em;
   text-align: center;
+  color: var(--color-main);
 }
 
 .recruitPage .topSec .topText:before {
@@ -2120,7 +2122,7 @@ a[href^="tel:"] {
   bottom: 0;
   width: 32px;
   height: 1px;
-  background: #232835;
+  background: var(--color-main);
   content: "";
 }
 
@@ -2186,7 +2188,7 @@ a[href^="tel:"] {
 
 .recruitPage .recruitSec {
   padding: 155px 0 170px;
-  background: #F2F3F2;
+  background: var(--color-sub);
 }
 
 .recruitPage .recruitSec .innerBox {
@@ -2239,7 +2241,8 @@ a[href^="tel:"] {
 
 .recruitPage .recruitSec .innerBox .textBox td span {
   display: inline-block;
-  color: var(--color-main);
+  color: #fff;
+  background-color: var(--color-main);
   border: 1px solid var(--color-main);
   padding: 0 20px;
 }
@@ -2399,7 +2402,7 @@ a[href^="tel:"] {
 .recruitPage .businessSec {
   position: relative;
   padding: 120px 0;
-  background: #F2F3F2;
+  background: var(--color-sub);
 }
 
 .recruitPage .businessSec .business-wrap {
@@ -2501,7 +2504,7 @@ a[href^="tel:"] {
 /*--- 1日のスケジュール ---*/
 .recruitPage .oneDay {
   padding: 192px 0 180px;
-  background: #F2F3F2;
+  background: var(--color-sub);
 }
 
 .recruitPage .oneDay h3 {
@@ -2515,7 +2518,8 @@ a[href^="tel:"] {
   font-size: 3rem;
   font-weight: 700;
   letter-spacing: 0.06em;
-  border-bottom: 2px solid var(--color-dark);
+  color: var(--color-main);
+  border-bottom: 2px solid var(--color-main);
 }
 
 .recruitPage .listBox {
@@ -2528,7 +2532,7 @@ a[href^="tel:"] {
   top: -25px;
   bottom: -20px;
   width: 1px;
-  background: #969696;
+  background: var(--color-main);
   content: "";
 }
 
@@ -2586,6 +2590,7 @@ a[href^="tel:"] {
   font-weight: 500;
   text-align: right;
   box-sizing: border-box;
+  color: var(--color-main);
 }
 
 .recruitPage .listBox .timeBox .time:before {
@@ -2595,7 +2600,7 @@ a[href^="tel:"] {
   top: 50%;
   width: 20px;
   height: 20px;
-  background: var(--color-dark);
+  background: var(--color-main);
   content: "";
   border-radius: 50%;
 }
@@ -2615,6 +2620,7 @@ a[href^="tel:"] {
   text-align: left;
   padding: 0 0 0 32px;
   width: 140px;
+  color: var(--color-main);
 }
 
 .recruitPage .listBox .timeBox01 .time02 {
@@ -2677,7 +2683,7 @@ a[href^="tel:"] {
 
 .recruitPage .comCompany {
   padding: 180px 0 200px;
-  background: #F2F3F2;
+  background: var(--color-sub);
 }
 
 .recruitPage .comCompany .textBox {
@@ -3148,7 +3154,7 @@ a[href^="tel:"] {
   justify-content: center;
   font-size: 1.4rem;
   font-weight: 500;
-  background: var(--color-dark);
+  background: var(--color-main);
   text-align: center;
   margin-left: 10px;
 }
@@ -3344,8 +3350,8 @@ a[href^="tel:"] {
 }
 
 .contactPage .submit li.disabled .info01 {
-  background: #CECECE;
-  border-color: #CECECE;
+  background: var(--color-main);
+  border-color: var(--color-main);
 }
 
 .contactPage .submit li.disabled .info01:after {

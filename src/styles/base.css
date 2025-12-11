@@ -245,7 +245,7 @@ body {
   line-height: 1.5;
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
-  background-color: #f7ffff;
+  background-color: #fbfeff;
 }
 
 body.fixed {
@@ -923,6 +923,11 @@ a[href^="tel:"] {
   font-weight: 700;
   letter-spacing: 0.06em;
   border-bottom: 1px solid #3A6F8A;
+}
+
+.headLine03.fadeInUp.blog
+{
+  color: var(--color-main);
 }
 
 @media all and (max-width: 896px) {
@@ -2484,8 +2489,10 @@ a[href^="tel:"] {
 
 .recruitPage .welfareSec ul>li figure {
   background: #FFFFFF;
-  border: 1px solid #DBE1E7;
-  padding: 45px;
+  border: 1px solid #1961a0;
+  padding: 30px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .recruitPage .welfareSec ul>li figure figcaption {
@@ -2934,7 +2941,7 @@ a[href^="tel:"] {
   }
 
   .recruitPage .welfareSec ul>li figure {
-    padding: 35px;
+    padding: 25px;
   }
 
   .recruitPage .welfareSec ul>li figure img {

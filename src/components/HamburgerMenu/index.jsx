@@ -33,7 +33,7 @@ const Component = ({ menuIsOpen }) => {
         ) : null}
 
         <li className="blank">
-          <a title="企業公式サイト" href="/" target="_blank">
+          <a title="企業公式サイト" href="https://yoneharahoken.com" target="_blank">
             企業公式サイト
           </a>
         </li>

@@ -49,7 +49,7 @@ const Page = ({ location, pageContext }) => {
             >
               {formatDate(pageContext.createTime)}
             </time>
-            <h2 className="headLine03 fadeInUp">{pageContext.title}</h2>
+            <h2 className="headLine03 fadeInUp blog">{pageContext.title}</h2>
             <div>
               <section
                 dangerouslySetInnerHTML={{ __html: pageContext.content }}

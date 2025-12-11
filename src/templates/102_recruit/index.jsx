@@ -130,12 +130,8 @@ const Page = ({ location, pageContext }) => {
           <div className="content">
             <h3 className="headLine02 fadeInUp">従業員のインタビュー</h3>
             <p className="topTxt fadeInUp">
-              {pageContext.interview.headers.text}
+              当社で働く社員の声をご紹介します。<br/>未経験入社、事務職、営業職、それぞれがどのように仕事と向き合い、成長を実感しているのか、<br/>リアルな声をお届けします。職場の雰囲気や教育体制、働き方のイメージづくりにお役立てください。
             </p>
-
-            {/* 代表者インタビュー */}
-            <div className="video fadeInUp">
-            </div>
 
             {/* 従業員インタビュー */}
             <div className="faqSec">
